@@ -1,0 +1,14 @@
+# --- Device app requirements ---
+# Easiest: from the repo root run  `make setup`  (or `python3 manage.py setup`).
+#
+# On the Raspberry Pi, picamera2 + gpiozero + Tk + a CJK font come from the OS:
+#     sudo apt install -y python3-picamera2 python3-gpiozero python3-lgpio python3-tk fonts-noto-cjk
+#
+# AI (same version that trained the models; new_deployment no longer needs matplotlib):
+tensorflow==2.15.1
+numpy<2
+pillow
+opencv-python     # similarity.py (session positioning check)
+#
+# For LAPTOP simulation testing (SIMULATE_CAMERA/BUTTON=True, RUN_AI=False)
+# you only need:  pillow, numpy, opencv-python, and Tk (python3-tk). No TensorFlow.

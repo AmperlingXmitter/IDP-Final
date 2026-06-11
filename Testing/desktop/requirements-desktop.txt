@@ -1,0 +1,9 @@
+# Desktop app (medical staff). Cross-platform: Windows 10/11 + macOS.
+dash>=2.16
+plotly>=5.20
+pywebview>=5.0
+pillow>=10.0        # image resizing for the inline base64 viewer in app.py
+reportlab>=4.0      # "Export PDF" patient report (report.py); button auto-disables if absent
+# Firebase cloud source uses ONLY the std-lib urllib — no firebase-admin needed.
+#   DFU_BACKEND=firebase python run_desktop.py   # read from Firestore
+# Packaging to a single app/exe: pyinstaller

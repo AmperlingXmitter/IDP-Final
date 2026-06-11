@@ -1,0 +1,14 @@
+# DFU AI — deployment (inference) dependencies
+#
+# CRITICAL: TensorFlow MUST be 2.15.x. The .keras model files were saved with
+# TF 2.15.1 / Keras 2.15 and will FAIL to load on a different major/minor version
+# ("Layer '...' expected 1 variables, received 0"). Pin it exactly.
+#
+# Install:  pip install -r requirements.txt
+# Pi note:  on Raspberry Pi OS use the piwheels index (it has a prebuilt
+#           tensorflow 2.15 aarch64 wheel):  pip install -r requirements.txt
+#           --extra-index-url https://www.piwheels.org/simple
+
+tensorflow==2.15.1      # MUST match the version that saved the models
+numpy>=1.23,<2.0        # numpy 2.x is incompatible with TF 2.15
+pillow>=9.0             # image loading + saving the overlay and close-up PNGs

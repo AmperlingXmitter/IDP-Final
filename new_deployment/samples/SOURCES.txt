@@ -1,0 +1,9 @@
+Sample images for smoke-testing only (NOT used to train the models).
+Both downloaded from Wikimedia Commons under free licenses (CC BY / CC BY-SA /
+public domain). Open the Commons page for the exact license + author before any
+public reuse.
+
+  sample_foot.jpg    Diabetic foot ulcer
+                     https://commons.wikimedia.org/wiki/File:Diabetic_Foot_Ulcer.jpg
+  sample_normal.jpg  Normal legs (negative control)
+                     https://commons.wikimedia.org/wiki/File:Back_of_legs_(50766443646).jpg
